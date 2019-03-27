@@ -7,7 +7,7 @@ import skuber.{ObjectReference, LabelSelector, NonCoreResourceSpecification, Obj
   * @author David O'Riordan
   */
 case class CronJob(val kind: String ="CronJob",
-  override val apiVersion: String = batchAPIVersion,
+  override val apiVersion: String = batchBetaAPIVersion,
   val metadata: ObjectMeta = ObjectMeta(),
   spec: Option[CronJob.Spec] = None,
   status: Option[CronJob.Status] = None) extends ObjectResource

@@ -10,6 +10,7 @@ import skuber.api.client._
   */
 package object batch {
   val batchAPIVersion = "batch/v1"
+  val batchBetaAPIVersion = "batch/v1beta1"
   type JobList = ListResource[Job]
   type CronJobList = ListResource[CronJob]
 }
